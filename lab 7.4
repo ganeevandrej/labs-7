@@ -3,10 +3,10 @@
 
 int main()
 {
-	int v1, v2, S, t;
-	scanf_s(" %d %d %d %d", &v1, &v2, &t, &S);
-	v1 = v1 * t;
-	v2 = v2 * t;
-	S = S + v1 + v2;
-	printf(" %d", S);
+	float x, a, y;
+	scanf_s(" %f %f %f", &a, &x, &y);
+	a = a / x; // стоимость 1 кг конфет
+	y = a * y; // стоимость н кг конфет
+	printf(" %.0f %.0f", a, y);
 	return 0;
+}
